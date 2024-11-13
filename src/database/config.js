@@ -7,7 +7,6 @@ const config = new Sequelize({
   host: process.env.DEV_DB_HOST,
   dialect: "mysql",
   timezone: "+05:30",
-  logging: console.log,
 });
 
 export default config;

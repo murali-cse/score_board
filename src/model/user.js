@@ -18,4 +18,23 @@ User.init(
   { sequelize: config, freezeTableName: true }
 );
 
-export default User;
+export { User };
+
+class Arun extends Model {}
+
+Arun.init(
+  {
+    id: {
+      type: DataTypes.BIGINT,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
+  },
+  { sequelize: config, freezeTableName: true }
+);
+
+export { Arun };

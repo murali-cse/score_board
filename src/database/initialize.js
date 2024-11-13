@@ -5,7 +5,7 @@ export const db = async () => {
   try {
     // await config.authenticate();
 
-    await config.sync({ force: true });
+    await config.sync({ force: false });
   } catch (e) {
     throw e;
   }
