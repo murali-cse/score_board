@@ -7,6 +7,7 @@ User.init(
   {
     id: {
       type: DataTypes.BIGINT,
+      primaryKey: true,
       autoIncrement: true,
     },
     name: {
@@ -14,7 +15,7 @@ User.init(
       allowNull: true,
     },
   },
-  { config, freezeTableName: true }
+  { sequelize: config, freezeTableName: true }
 );
 
 export default User;

@@ -1,4 +1,5 @@
 import config from "./config.js";
+import * as Model from "../model/index.js";
 
 export const db = async () => {
   try {
